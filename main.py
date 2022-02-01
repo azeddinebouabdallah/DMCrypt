@@ -17,5 +17,5 @@ args = parser.parse_args()
 #print(parser.format_help())
 from utils.utils import getPricePrediction
 
-#exec(open("./model/AdaBoost-LSTM.py").read())
+exec(open("./model/AdaBoost-LSTM.py").read())
 getPricePrediction(args.date)
