@@ -28,6 +28,5 @@ def getPricePrediction(date):
         index = dateIndexes[0] + 1
         predictedPrice = adaboostlstmall[index]
         realPrice = real[index][0][0]
-        yesterdayPrice = real[index-1][0][0]
 
         print("The price prediction for the next day ({0}) is: {1}, while the real price is {2}".format(str(dates[index]), str(predictedPrice), str(realPrice)))
